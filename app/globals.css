@@ -1,0 +1,149 @@
+/* ---- base (ported from the design) ---- */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #f4f6f8;
+  color: #0b2233;
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+}
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ---- animation keyframes (ported from the design) ---- */
+@keyframes surfixLeft {
+  0% {
+    transform: translate(-180px, -70px) rotate(-15deg);
+    opacity: 0;
+  }
+  22% {
+    opacity: 1;
+  }
+  60% {
+    transform: translate(0, 0) rotate(0);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+@keyframes surfixRight {
+  0% {
+    transform: translate(180px, 72px) rotate(15deg);
+    opacity: 0;
+  }
+  22% {
+    opacity: 1;
+  }
+  60% {
+    transform: translate(0, 0) rotate(0);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+@keyframes surfixWeld {
+  0%,
+  52% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes surfixCrack {
+  0%,
+  56% {
+    opacity: 1;
+  }
+  82%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes surfixBob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-0.6deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(0.6deg);
+  }
+}
+@keyframes surfixFloatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes surfixPing {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.55;
+  }
+  70%,
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+/* ---- responsive breakpoints (new — the source design had none) ---- */
+@media (max-width: 920px) {
+  .surfix-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+  .surfix-services-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .surfix-find-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .surfix-footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .surfix-nav-links {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .surfix-services-grid,
+  .surfix-steps-grid,
+  .surfix-footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
