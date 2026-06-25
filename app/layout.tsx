@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
 import "./globals.css";
+import { SITE_URL } from "./site";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -9,7 +10,6 @@ const archivo = Archivo({
   display: "swap",
 });
 
-const SITE_URL = "https://surfix.co.za";
 const TITLE =
   "SURFIX — Surfboard Ding Repairs in Noordhoek, Cape Town | You Ding It, We Fix It";
 const DESCRIPTION =
@@ -54,36 +54,36 @@ export const metadata: Metadata = {
   other: {
     "geo.region": "ZA-WC",
     "geo.placename": "Noordhoek, Cape Town",
-    "geo.position": "-34.1006;18.3776",
-    ICBM: "-34.1006, 18.3776",
+    "geo.position": "-34.116299;18.386468",
+    ICBM: "-34.116299, 18.386468",
   },
 };
 
 const localBusinessLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://surfix.co.za/#business",
+  "@id": `${SITE_URL}/#business`,
   name: "SURFIX",
   alternateName: "Surfix Surfboard Repairs",
   slogan: "You ding it. We fix it.",
   description:
     "Surfboard ding and structural repair workshop in Noordhoek, Cape Town. We repair surfboards, kneeboards, surfskis and SUPs — from small dings and cracks to snapped boards and fin-box damage. Free quotes and fast turnaround.",
-  url: "https://surfix.co.za/",
+  url: `${SITE_URL}/`,
   telephone: "+27747762091",
-  image: "https://surfix.co.za/opengraph-image",
+  image: `${SITE_URL}/opengraph-image`,
   priceRange: "$$",
   currenciesAccepted: "ZAR",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Noordhoek Boat Storage Yard",
+    streetAddress: "11 Noordhoek Main Road",
     addressLocality: "Noordhoek",
     addressRegion: "Western Cape",
     postalCode: "7979",
     addressCountry: "ZA",
   },
-  geo: { "@type": "GeoCoordinates", latitude: -34.1006, longitude: 18.3776 },
+  geo: { "@type": "GeoCoordinates", latitude: -34.116299, longitude: 18.386468 },
   hasMap:
-    "https://www.google.com/maps/dir/?api=1&destination=Noordhoek+Boat+Storage+Yard%2C+Cape+Town",
+    "https://www.google.com/maps/dir/?api=1&destination=11+Noordhoek+Main+Road%2C+Noordhoek%2C+Cape+Town",
   areaServed: [
     { "@type": "City", name: "Cape Town" },
     { "@type": "Place", name: "Noordhoek" },

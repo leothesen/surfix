@@ -53,7 +53,7 @@ export default function FindUs() {
             </span>
             <div>
               <div style={{ fontWeight: 800, fontSize: 17, color: "#0B2233" }}>Noordhoek Boat Storage Yard</div>
-              <div style={{ fontSize: 15, color: "#5A6B78" }}>Noordhoek, Cape Town, Western Cape</div>
+              <div style={{ fontSize: 15, color: "#5A6B78" }}>11 Noordhoek Main Road, Noordhoek, Cape Town</div>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "flex-start", gap: 13, marginTop: 18 }}>
@@ -132,8 +132,8 @@ export default function FindUs() {
           }}
         >
           <iframe
-            title="Map to Noordhoek Boat Storage Yard, Cape Town"
-            src="https://www.google.com/maps?q=Noordhoek+Boat+Storage+Yard,+Cape+Town&output=embed"
+            title="Map to SURFIX — 11 Noordhoek Main Road, Noordhoek"
+            src="https://www.google.com/maps?q=11+Noordhoek+Main+Road,+Noordhoek,+Cape+Town&output=embed"
             style={{ width: "100%", height: "100%", minHeight: 380, border: 0, display: "block" }}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

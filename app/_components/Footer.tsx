@@ -49,6 +49,8 @@ export default function Footer() {
               <br />
               Noordhoek Boat Storage Yard
               <br />
+              11 Noordhoek Main Road
+              <br />
               Noordhoek, Cape Town
             </p>
           </div>

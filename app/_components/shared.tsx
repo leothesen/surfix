@@ -2,7 +2,7 @@ export const WA_LINK =
   "https://wa.me/27747762091?text=Hi%20Mathew%2C%20I%27ve%20got%20a%20ding%20I%27d%20like%20fixed%20%E2%80%94%20here%27s%20a%20photo%20of%20my%20board%3A";
 
 export const MAPS_LINK =
-  "https://www.google.com/maps/dir/?api=1&destination=Noordhoek+Boat+Storage+Yard%2C+Cape+Town";
+  "https://www.google.com/maps/dir/?api=1&destination=11+Noordhoek+Main+Road%2C+Noordhoek%2C+Cape+Town";
 
 export function WhatsAppIcon({ size = 18 }: { size?: number }) {
   return (
