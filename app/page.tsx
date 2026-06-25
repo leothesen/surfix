@@ -1,3 +1,4 @@
+import ScrollIntro from "./_components/ScrollIntro";
 import Header from "./_components/Header";
 import Hero from "./_components/Hero";
 import Services from "./_components/Services";
@@ -10,16 +11,19 @@ import FloatingWhatsApp from "./_components/FloatingWhatsApp";
 
 export default function Home() {
   return (
-    <div style={{ overflowX: "hidden" }}>
-      <Header />
-      <Hero />
-      <Services />
-      <HowItWorks />
-      <TaglineBand />
-      <FindUs />
-      <Faq />
-      <Footer />
-      <FloatingWhatsApp />
-    </div>
+    <>
+      <ScrollIntro />
+      <div id="site-start" style={{ overflowX: "clip" }}>
+        <Header />
+        <Hero />
+        <Services />
+        <HowItWorks />
+        <TaglineBand />
+        <FindUs />
+        <Faq />
+        <Footer />
+        <FloatingWhatsApp />
+      </div>
+    </>
   );
 }

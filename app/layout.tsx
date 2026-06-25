@@ -144,7 +144,7 @@ const faqLd = {
     ],
     [
       "How long does a surfboard repair take?",
-      "Turnaround is fast. Small dings are usually quick, while structural or snapped-board repairs take longer. Mathew will confirm the timing when you drop the board off.",
+      "Turnaround is fast. Small dings are usually quick, while structural or snapped-board repairs take longer. A collection time will be set on WhatsApp when you get the quote.",
     ],
     [
       "What kinds of boards does SURFIX fix?",

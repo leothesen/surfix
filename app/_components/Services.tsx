@@ -7,7 +7,7 @@ const CARDS = [
   },
   {
     title: "Kneeboards",
-    body: "Compact boards take a beating — we patch them up properly.",
+    body: "Dings, cracked rails and fin-box damage on kneeboards, repaired and sealed.",
     path: "M24 7 C31 14, 31 32, 24 41 C17 32, 17 14, 24 7 Z",
     line: [24, 11, 24, 37],
   },

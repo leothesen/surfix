@@ -9,7 +9,7 @@ const QA: [string, string][] = [
   ],
   [
     "How long does a repair take?",
-    "Turnaround is fast. Small dings are usually quick; structural or snapped-board repairs take a little longer. Mathew confirms timing when you drop the board off.",
+    "Turnaround is fast. Small dings are usually quick; structural or snapped-board repairs take a little longer. A collection time will be set on WhatsApp when you get the quote.",
   ],
   [
     "What kinds of boards do you fix?",
