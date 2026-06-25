@@ -8,10 +8,10 @@ export default function Hero() {
         style={{
           position: "relative",
           background: "radial-gradient(120% 120% at 80% 0%,#EAF4FC 0%,#F4F6F8 55%)",
-          padding: "64px 24px 0",
+          padding: "64px 0 0",
         }}
       >
-        <div style={{ maxWidth: 760, margin: "0 auto" }}>
+        <div style={{ maxWidth: 760, margin: "0 auto", padding: "0 24px" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/assets/surfix-logo.png"
