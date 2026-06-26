@@ -148,7 +148,7 @@ export default function ScrollIntro() {
             <ellipse cx="545" cy="384" rx="46" ry="8" fill="rgba(11,34,51,0.10)" />
 
             <text x="545" y="206" textAnchor="middle" fontFamily="inherit" fontWeight="800" fontSize="22" fill="#0C74BE">
-              Mat
+              Matt
             </text>
             <path d="M545,212 L545,228" stroke="#0C74BE" strokeWidth="2.4" />
             <path d="M540,223 L545,230 L550,223" fill="none" stroke="#0C74BE" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
